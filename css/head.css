@@ -1,0 +1,134 @@
+/* ============================================================================= */
+/*                CREATED BY QOSIMOV RAHMATULLO AND MADAMINOV NURILLO            */
+/* ============================================================================= */
+ 
+ @font-face {
+ 	font-family: 'Gilroy';
+ 	src: url("../fonts/Gilroy-Medium.ttf");
+ }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Gilroy' !important;
+}
+/* video {
+	width: 100%;
+	min-height: none;
+	position: absolute;
+	z-index: -10;
+
+} */
+
+  
+.image {
+	width: 40px;
+	height: auto;
+	margin-left: 20px
+}
+.navbar {
+	margin-bottom: 70px;
+	border-bottom: 1px solid #fff;
+	background: url("../video/backggound-video.mp4");
+}
+.fa-user {
+	font-size: 25px;
+	margin-left: 200px;
+	color: transparent;
+	-webkit-text-stroke: 1px #fff;
+}
+.nav-link {
+	color: #335468 !important;
+	margin-left: 15px;
+	font-family: 'Gilroy' !important;
+	margin-top: 10px;
+	opacity: 85%;
+	filter: brightness(95%);
+}
+.nav-link:hover{
+	opacity: 1;
+	filter: brightness(100%);
+}
+.navbar-nav {
+	margin-left: 20px;
+}
+.h2 {
+	color: #335468;
+	text-align: center;
+	font-size: 60px !important;
+	
+}
+.buttons {
+	width: 100%;
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+}
+.--btn {
+	margin-left: 10px;
+}
+.--btn:first-child {
+	color: #fff;
+	background-color: rgba(16, 74, 121, 0.562);
+}
+.noHover:hover {
+	background-color: rgba(16, 74, 121, 0.562) !important;
+}
+.p {
+	color: #335468;
+	margin-top: 70px !important;
+	font-size: 20px;
+	text-align: center;
+}
+.myVideo {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	object-fit: cover;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+/* ============================================================================= */
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+	video.myVideo{
+		height:100%;
+		padding-bottom: -50%;
+	}
+}
+/* lg */
+@media screen and (max-width: 1199px ) and (min-width: 992px){
+	video.myVideo{
+		height:100%;
+		padding-bottom: -50%;
+	}
+}
+/* md */
+@media screen and (max-width: 991px) and (min-width: 768px ) {
+	video.myVideo{
+		height:50%;
+		padding-bottom: -50%;
+	}
+}
+/* small */
+@media screen and (max-width: 767px) and (min-width: 566px) {
+	video.myVideo{
+		height:40%;
+		padding-bottom: -50%;
+	}
+}
+/* xs */
+@media screen and (max-width: 565px) {
+	video.myVideo{
+		height:30%;
+		padding-bottom: -50%;
+	}
+}
+
+/* ============================================================================= */
